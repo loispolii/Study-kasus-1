@@ -29,7 +29,7 @@ bensin::bensin()
 
 istream& operator>>(istream& in, bensin& input)
 {
-	cout << "Nama Pembeli           : "; in >>input.nama;
+    cout << "Nama Pembeli           : "; in >>input.nama;
     cout << "\nMasukan Jenis Bensin : "; in >>input.jenis;
     cout << "\nMasukan Jumlah Liter : "; in >>input.liter;
     cout << "\nHarga/Liter          : "; in >>input.harga;
@@ -38,9 +38,9 @@ istream& operator>>(istream& in, bensin& input)
 
 ostream& operator<<(ostream& out, const bensin& output)
 {
-	out << endl << endl;
-	out << "STURK....\n";
-	out << "Nama         : " <<output.nama  << endl;
+    out << endl << endl;
+    out << "STURK....\n";
+    out << "Nama         : " <<output.nama  << endl;
     out << "Jenis Bensin : " <<output.jenis << endl;
     out << "Jumlah Liter : " <<output.liter << endl;
     out << "Total Harga Bensin : " <<output.total << endl;
